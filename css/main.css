@@ -1,0 +1,238 @@
+/*Font style from Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Ubuntu:wght@700&display=swap");
+/*Color codes for my designs */
+:root {
+  --primary-color: #1C2E1A;
+  --secondary-color1: #FFFFFF;
+  --secondary-color2: #db1216;
+}
+
+body {
+  background-image: url("/assets/images/backgroundImage.jpg");
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+  /* Css styling for Navigation Bar max-width: 768px */
+  /* Css Styles for Second Section (Welcome Section */
+}
+
+body li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body .main-header {
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+body .main-header .logo-box {
+  padding: 1rem;
+}
+
+body .main-header nav a:hover {
+  color: var(--secondary-color2);
+}
+
+body .main-header nav a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'poppins', 'sans-serif';
+  color: var(--secondary-color1);
+}
+
+body .main-header nav a button {
+  color: var(--secondary-color1);
+  font-size: 17.5px;
+  font-weight: bold;
+  font-family: 'poppins', 'sans-serif';
+  background-color: transparent;
+  padding: 2rem;
+  padding: 1rem;
+  border-radius: 1.1rem;
+  border: 0.3rem;
+  border-color: var(--secondary-color1);
+  border-style: solid;
+}
+
+body .map-section {
+  margin: 1.3em;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-family: 'poppins', 'sans-serif';
+}
+
+body .map-section h3 {
+  text-align: center;
+}
+
+body .map-section .map-style {
+  border-color: var(--primary-color);
+  border-style: dashed;
+  border-radius: 0.5em;
+  border-color: var(--primary-color);
+  border-style: dashed;
+  border-radius: 0.5em;
+}
+
+body .map-section iframe {
+  width: 100%;
+}
+
+body .welcome-header {
+  font-family: 'poppins', 'sans-serif';
+  text-align: center;
+  margin: 1rem 0rem 1.4rem 0rem;
+}
+
+body .welcome-header .left-col img {
+  width: 100%;
+  margin-top: -17px;
+  border-radius: 0.5em;
+}
+
+body .second-header h3 {
+  font-size: 15px;
+  margin: 0.1rem 0 0.1rem 0;
+}
+
+body .second-header p {
+  font-size: 12.5px;
+}
+
+body button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: var(--secondary-color1);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'poppins', 'sans-serif';
+  background-color: var(--primary-color);
+  padding: 0.12rem;
+  border-radius: 0.5rem;
+  border: 0.3rem;
+  border-color: var(--primary-color);
+  border-style: solid;
+}
+
+.third-header {
+  font-family: 'poppins', 'sans-serif';
+  font-weight: 400;
+  background-color: rgba(28, 46, 26, 0.25);
+  border-radius: 0.5em;
+  color: var(--secondary-color1);
+  background-image: url("/assets/images/third-header-background.png");
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+/* Footer Css Styling */
+footer {
+  background-color: var(--primary-color);
+  padding: 0.5rem 0.5rem 2rem 0.5rem;
+  font-size: 16px;
+  color: var(--secondary-color1);
+}
+
+footer .notices {
+  text-decoration: none;
+}
+
+/* Css styling for bigger screens min-width: 768px */
+@media screen and (min-width: 768px) {
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0;
+  }
+  .first-header .img-nav {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+  .first-header h1 {
+    font-size: 50px;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: 'Poppins', 'sans-serif';
+  }
+  .Nav-Buttons {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Nav-Buttons .nav-button {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'poppins', 'sans-serif';
+    margin: 1em;
+    color: var(--primary-color);
+    background-color: transparent;
+    padding: 0.2em;
+  }
+  .Nav-Buttons button {
+    padding: 1rem;
+    border-radius: 1.1rem;
+    border: 0.3rem;
+    border-color: var(--primary-color);
+    border-style: solid;
+  }
+}
+
+/* Css styling for landing.html */
+.first-header .img-nav {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.first-header h1 {
+  font-size: 22.5px;
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+.nav-Buttons button:hover {
+  color: var(--secondary-color2);
+}
+
+.nav-Buttons {
+  text-align: center;
+}
+
+.nav-Buttons .nav-button {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'poppins', 'sans-serif';
+  margin: 1em;
+  color: var(--primary-color);
+  background-color: transparent;
+  padding: 0.2em;
+}
+
+.nav-Buttons button {
+  padding: 1rem;
+  border-radius: 1.1rem;
+  border: 0.3rem;
+  border-color: var(--primary-color);
+  border-style: solid;
+}
+/*# sourceMappingURL=main.css.map */
