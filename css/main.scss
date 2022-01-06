@@ -67,6 +67,9 @@ body {
         }
     }
     /* Css Styles for Second Section (Welcome Section */
+    .desktop-header {
+        display: none;
+    }
     .welcome-header {
         font-family: 'poppins', 'sans-serif';
         text-align: center;
@@ -78,20 +81,17 @@ body {
                 border-radius: 0.2em;
             }
         }
-        .welcome-header-image-desktop {
-            display: none;
-        }
     }
     .second-header {
+        margin: 1rem 0 0.1rem 0;
+        font-family: 'poppins', 'sans-serif';
         h3 {
             font-size: 15px;
             font-weight: 800;
-            margin: 0.1rem 0 0.1rem 0;
         }
         p {
-            font-size: 12.5px;
-            font-family: 'poppins', 'sans-serif';
-            font-weight: 400;
+            font-size: 13px;
+            font-weight: 600;
         }
     }
     button {
@@ -120,6 +120,7 @@ body {
         font-family: 'poppins', 'sans-serif';
         h3 {
             text-align: center;
+            font-weight: bold;
         }
         .map-style {
             border-color: var(--primary-color);
@@ -150,11 +151,14 @@ body {
             display: block;
         }
     }
-    .third-section {
+    .desktop-header {
+        display: block;
+    }
+    .welcome-header {
         display: none;
     }
-    footer {
-        font-size: 30px;
+    .third-section {
+        display: none;
     }
 }
 

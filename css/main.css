@@ -76,6 +76,10 @@ body .main-header .mobile-menu-exit {
   display: none;
 }
 
+body .desktop-header {
+  display: none;
+}
+
 body .welcome-header {
   font-family: 'poppins', 'sans-serif';
   text-align: center;
@@ -88,20 +92,19 @@ body .welcome-header .welcome-header-image-mobile img {
   border-radius: 0.2em;
 }
 
-body .welcome-header .welcome-header-image-desktop {
-  display: none;
+body .second-header {
+  margin: 1rem 0 0.1rem 0;
+  font-family: 'poppins', 'sans-serif';
 }
 
 body .second-header h3 {
   font-size: 15px;
   font-weight: 800;
-  margin: 0.1rem 0 0.1rem 0;
 }
 
 body .second-header p {
-  font-size: 12.5px;
-  font-family: 'poppins', 'sans-serif';
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 body button {
@@ -133,6 +136,7 @@ body .map-section {
 
 body .map-section h3 {
   text-align: center;
+  font-weight: bold;
 }
 
 body .map-section .map-style {
@@ -159,11 +163,14 @@ body .map-section iframe {
   .main-header nav a {
     display: block;
   }
-  .third-section {
+  .desktop-header {
+    display: block;
+  }
+  .welcome-header {
     display: none;
   }
-  footer {
-    font-size: 30px;
+  .third-section {
+    display: none;
   }
 }
 
