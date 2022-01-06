@@ -10,6 +10,9 @@
     --secondary-color2: #db1216;
 }
 
+
+/* Css Styling Section for my Project */
+
 body {
     background-image: url('/assets/images/backgroundImage.jpg');
     margin: 0;
@@ -22,14 +25,11 @@ body {
     .main-header {
         background-color: var(--primary-color);
         width: 100%;
-        .logo-box {
-            padding: 1rem;
-        }
         nav a:hover {
             color: var(--secondary-color2);
         }
         nav a {
-            display: block;
+            display: none;
             padding: 1rem;
             text-decoration: none;
             list-style-type: none;
@@ -37,6 +37,9 @@ body {
             font-weight: bold;
             font-family: 'poppins', 'sans-serif';
             color: var(--secondary-color1);
+            nav a:hover {
+                color: var(--secondary-color2);
+            }
             button {
                 color: var(--secondary-color1);
                 font-size: 17.5px;
@@ -51,7 +54,65 @@ body {
                 border-style: solid;
             }
         }
+        .logo-box {
+            padding: 1em;
+            display: flex;
+            place-content: end space-between;
+        }
+        .mobile-menu {
+            cursor: pointer;
+        }
+        .mobile-menu-exit {
+            display: none;
+        }
     }
+    /* Css Styles for Second Section (Welcome Section */
+    .welcome-header {
+        font-family: 'poppins', 'sans-serif';
+        text-align: center;
+        margin: 1rem 0rem 1.4rem 0rem;
+        .welcome-header-image-mobile {
+            img {
+                width: 100%;
+                margin-top: -20px;
+                border-radius: 0.2em;
+            }
+        }
+        .welcome-header-image-desktop {
+            display: none;
+        }
+    }
+    .second-header {
+        h3 {
+            font-size: 15px;
+            font-weight: 800;
+            margin: 0.1rem 0 0.1rem 0;
+        }
+        p {
+            font-size: 12.5px;
+            font-family: 'poppins', 'sans-serif';
+            font-weight: 400;
+        }
+    }
+    button {
+        align-self: center;
+        color: var(--secondary-color1);
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'poppins', 'sans-serif';
+        background-color: var(--primary-color);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: 0.3rem;
+        border-color: var(--primary-color);
+        border-style: solid;
+    }
+    .third-section {
+        img {
+            width: 100%;
+        }
+    }
+    /* Css Styling for Map-Section */
     .map-section {
         margin: 1.3em;
         color: var(--primary-color);
@@ -72,114 +133,64 @@ body {
             width: 100%;
         }
     }
-    /* Css Styles for Second Section (Welcome Section */
-    .welcome-header {
-        font-family: 'poppins', 'sans-serif';
-        text-align: center;
-        margin: 1rem 0rem 1.4rem 0rem;
-        .left-col {
-            img {
-                width: 100%;
-                margin-top: -17px;
-                border-radius: 0.5em;
-            }
-        }
-    }
-    .second-header {
-        h3 {
-            font-size: 15px;
-            margin: 0.1rem 0 0.1rem 0;
-        }
-        p {
-            font-size: 12.5px;
-        }
-    }
-    button {
-        align-self: center;
-        color: var(--secondary-color1);
-        font-size: 15px;
-        font-weight: bold;
-        font-family: 'poppins', 'sans-serif';
-        background-color: var(--primary-color);
-        padding: 0.12rem;
-        border-radius: 0.5rem;
-        border: 0.3rem;
-        border-color: var(--primary-color);
-        border-style: solid;
-    }
-}
-
-.third-header {
-    font-family: 'poppins', 'sans-serif';
-    font-weight: 400;
-    background-color: rgba(28, 46, 26, 0.25);
-    border-radius: 0.5em;
-    color: var(--secondary-color1);
-    background-image: url('/assets/images/third-header-background.png');
-    width: 100%;
-    background-repeat: no-repeat;
-}
-
-
-/* Footer Css Styling */
-
-footer {
-    background-color: var(--primary-color);
-    padding: 0.5rem 0.5rem 2rem 0.5rem;
-    font-size: 16px;
-    color: var(--secondary-color1);
-    .notices {
-        text-decoration: none;
-    }
 }
 
 
 /* Css styling for bigger screens min-width: 768px */
 
 @media screen and (min-width: 768px) {
-    nav ul {
-        display: flex;
-    }
-    nav li {
-        flex: 1 1 0;
-    }
-    .first-header {
-        .img-nav {
+    .main-header {
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu-exit {
+            display: none;
+        }
+        nav a {
             display: block;
-            margin-top: 2rem;
-            margin-bottom: 2rem;
-            margin-left: auto;
-            margin-right: auto;
-            width: 10%;
-        }
-        h1 {
-            font-size: 50px;
-            text-align: center;
-            color: var(--primary-color);
-            font-weight: bold;
-            font-family: 'Poppins', 'sans-serif';
         }
     }
-    .Nav-Buttons {
+    .third-section {
+        display: none;
+    }
+    footer {
+        font-size: 30px;
+    }
+}
+
+
+/* Footer Css Styling  for index.html*/
+
+footer {
+    background-color: var(--primary-color);
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    font-size: 14px;
+    font-family: 'poppins', 'sans-serif';
+    color: var(--secondary-color1);
+    font-weight: 600;
+    .notices {
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+    }
+    li a {
+        list-style: none;
+        text-decoration: none;
+        color: var(--secondary-color1);
+        font-family: 'poppins', 'sans-serif';
+        font-weight: bold;
+    }
+    .ref-class {
+        display: flex;
+        place-content: end space-between;
+        margin: 0.5rem 1rem 1rem 0.5rem;
+    }
+    .footer-inscr {
+        color: var(--secondary-color1);
+        a {
+            text-decoration: none;
+            color: var(--secondary-color1);
+        }
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        .nav-button {
-            font-size: 40px;
-            font-weight: bold;
-            font-family: 'poppins', 'sans-serif';
-            margin: 1em;
-            color: var(--primary-color);
-            background-color: transparent;
-            padding: 0.2em;
-        }
-        button {
-            padding: 1rem;
-            border-radius: 1.1rem;
-            border: 0.3rem;
-            border-color: var(--primary-color);
-            border-style: solid;
-        }
     }
 }
 
@@ -189,6 +200,7 @@ footer {
 .first-header {
     .img-nav {
         display: block;
+        align-items: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
         margin-left: auto;
