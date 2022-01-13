@@ -87,7 +87,7 @@ body {
         font-family: 'poppins', 'sans-serif';
         h3 {
             font-size: 15px;
-            font-weight: 800;
+            font-weight: 400;
         }
         p {
             font-size: 13px;
@@ -171,7 +171,7 @@ footer {
     font-size: 14px;
     font-family: 'poppins', 'sans-serif';
     color: var(--secondary-color1);
-    font-weight: 600;
+    font-weight: 400;
     .notices {
         padding: 0.5rem 0.5rem 1rem 0.5rem;
     }
@@ -180,7 +180,7 @@ footer {
         text-decoration: none;
         color: var(--secondary-color1);
         font-family: 'poppins', 'sans-serif';
-        font-weight: bold;
+        font-weight: light;
     }
     .ref-class {
         display: flex;

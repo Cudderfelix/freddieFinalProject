@@ -99,7 +99,7 @@ body .second-header {
 
 body .second-header h3 {
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 body .second-header p {
@@ -181,7 +181,7 @@ footer {
   font-size: 14px;
   font-family: 'poppins', 'sans-serif';
   color: var(--secondary-color1);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 footer .notices {
@@ -193,7 +193,7 @@ footer li a {
   text-decoration: none;
   color: var(--secondary-color1);
   font-family: 'poppins', 'sans-serif';
-  font-weight: bold;
+  font-weight: light;
 }
 
 footer .ref-class {
