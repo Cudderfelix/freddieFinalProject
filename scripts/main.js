@@ -24,5 +24,16 @@
 
 // global objects in window is different from the global objects in node
 
-console.log(__dirname);
-console.log(__filename);
+// console.log(__dirname);
+//console.log(__filename); 
+
+const fs = require('fs');
+
+// reading files
+fs.readFile('./docs/blog1.txt', (err, data) => {
+
+})
+
+const { people, ages } = require('./people');
+
+console.log(people, ages);

@@ -43,7 +43,7 @@ body {
             button {
                 color: var(--secondary-color1);
                 font-size: 17.5px;
-                font-weight: bold;
+                font-weight: 400;
                 font-family: 'poppins', 'sans-serif';
                 background-color: transparent;
                 padding: 2rem;
@@ -85,20 +85,19 @@ body {
     .second-header {
         margin: 1rem 0 0.1rem 0;
         font-family: 'poppins', 'sans-serif';
-        h3 {
-            font-size: 15px;
-            font-weight: 400;
+        h2 {
+            font-weight: 600;
         }
         p {
-            font-size: 13px;
-            font-weight: 600;
+            font-size: 17px;
+            font-weight: 400;
         }
     }
     button {
         align-self: center;
         color: var(--secondary-color1);
-        font-size: 15px;
-        font-weight: bold;
+        font-size: 17px;
+        font-weight: normal;
         font-family: 'poppins', 'sans-serif';
         background-color: var(--primary-color);
         padding: 0.5rem;
