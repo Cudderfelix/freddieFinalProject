@@ -1,0 +1,263 @@
+/*Font style from Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Ubuntu:wght@700&display=swap");
+/*Color codes for my designs */
+:root {
+  --primary-color: #1C2E1A;
+  --secondary-color1: #FFFFFF;
+  --secondary-color2: #db1216;
+}
+
+/* Css Styling Section for my Project */
+body {
+  background-image: url("/backgroundImage.jpg");
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+  /* Css styling for Navigation Bar max-width: 768px */
+  /* Css Styles for Second Section (Welcome Section */
+  /* Css Styling for Map-Section */
+}
+
+body li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body .main-header {
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+body .main-header nav a:hover {
+  color: var(--secondary-color2);
+}
+
+body .main-header nav a {
+  display: none;
+  padding: 1rem;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'poppins', 'sans-serif';
+  color: var(--secondary-color1);
+}
+
+body .main-header nav a nav a:hover {
+  color: var(--secondary-color2);
+}
+
+body .main-header nav a button {
+  color: var(--secondary-color1);
+  font-size: 17.5px;
+  font-weight: 400;
+  font-family: 'poppins', 'sans-serif';
+  background-color: transparent;
+  padding: 2rem;
+  padding: 1rem;
+  border-radius: 1.1rem;
+  border: 0.3rem;
+  border-color: var(--secondary-color1);
+  border-style: solid;
+}
+
+body .main-header .logo-box {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: end space-between;
+}
+
+body .main-header .mobile-menu {
+  cursor: pointer;
+}
+
+body .main-header .mobile-menu-exit {
+  display: none;
+}
+
+body .desktop-header {
+  display: none;
+}
+
+body .welcome-header {
+  font-family: 'poppins', 'sans-serif';
+  text-align: center;
+  margin: 1rem 0rem 1.4rem 0rem;
+}
+
+body .welcome-header .welcome-header-image-mobile img {
+  width: 100%;
+  margin-top: -20px;
+  border-radius: 0.2em;
+}
+
+body .second-header {
+  margin: 1rem 0 0.1rem 0;
+  font-family: 'poppins', 'sans-serif';
+}
+
+body .second-header h2 {
+  font-weight: 600;
+}
+
+body .second-header p {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+body button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: var(--secondary-color1);
+  font-size: 17px;
+  font-weight: normal;
+  font-family: 'poppins', 'sans-serif';
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.3rem;
+  border-color: var(--primary-color);
+  border-style: solid;
+}
+
+body .third-section img {
+  width: 100%;
+}
+
+body .map-section {
+  margin: 1.3em;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-family: 'poppins', 'sans-serif';
+}
+
+body .map-section h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+body .map-section .map-style {
+  border-color: var(--primary-color);
+  border-style: dashed;
+  border-radius: 0.5em;
+  border-color: var(--primary-color);
+  border-style: dashed;
+  border-radius: 0.5em;
+}
+
+body .map-section iframe {
+  width: 100%;
+}
+
+/* Css styling for bigger screens min-width: 768px */
+@media screen and (min-width: 768px) {
+  .main-header .mobile-menu {
+    display: none;
+  }
+  .main-header .mobile-menu-exit {
+    display: none;
+  }
+  .main-header nav a {
+    display: block;
+  }
+  .desktop-header {
+    display: block;
+  }
+  .welcome-header {
+    display: none;
+  }
+  .third-section {
+    display: none;
+  }
+}
+
+/* Footer Css Styling  for index.html*/
+footer {
+  background-color: var(--primary-color);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 14px;
+  font-family: 'poppins', 'sans-serif';
+  color: var(--secondary-color1);
+  font-weight: 400;
+}
+
+footer .notices {
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+footer li a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--secondary-color1);
+  font-family: 'poppins', 'sans-serif';
+  font-weight: light;
+}
+
+footer .ref-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: end space-between;
+  margin: 0.5rem 1rem 1rem 0.5rem;
+}
+
+footer .footer-inscr {
+  color: var(--secondary-color1);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  text-align: center;
+}
+
+footer .footer-inscr a {
+  text-decoration: none;
+  color: var(--secondary-color1);
+}
+
+/* Css styling for landing.html */
+.first-header .img-nav {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.first-header h1 {
+  font-size: 42.5px;
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: bolder;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+.nav-Buttons button:hover {
+  color: var(--secondary-color2);
+}
+
+.nav-Buttons {
+  text-align: center;
+}
+
+.nav-Buttons .nav-button {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'poppins', 'sans-serif';
+  margin: 1em;
+  color: var(--primary-color);
+  background-color: transparent;
+  padding: 0.2em;
+}
+
+.nav-Buttons button {
+  padding: 1rem;
+  border-radius: 1.1rem;
+  border: 0.3rem;
+  border-color: var(--primary-color);
+  border-style: solid;
+}
+/*# sourceMappingURL=main.css.map */
