@@ -10,7 +10,13 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // listen for requests
-app.listen(3000);
+let port = process.env.PORT;
+
+if (port == null || port == "") {
+    port = 8000;
+}
+app.listen(port);
+
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
