@@ -5,7 +5,6 @@ const ejs = require('ejs');
 // express app
 const app = express();
 
-
 // register view engine    
 app.set('view engine', 'ejs');
 
@@ -31,10 +30,3 @@ app.get('/index.html', (req, res) => {
 app.use((req, res) => {
     res.render('404', { title: '404 Error' });
 });
-
-
-
-
-//app.get('/about-us', (req, res) => {
-//    res.redirect('/about');
-//});

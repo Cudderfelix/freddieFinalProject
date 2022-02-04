@@ -8,7 +8,11 @@
     <!-- CSS BootStrap only -->
     <link rel="stylesheet" href="/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--  Css (Sass Only)-->
+    <!--  Swiper CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+
 
     <title>Freddie's |
         <%= title %>
@@ -18,102 +22,56 @@
 <body>
     <!--Navigation Menu & Logo -->
 
-    <div class="main-header">
-        <div class="logo-box">
+    <div class="navbar">
+        <div class="container">
             <a href="/"><img class="freddie-logo" src="/Freddie's Logo.svg" alt="freddie-logo"></a>
-            <img id="mobile-cta" class="mobile-menu" src="/hamburgerMenuhamBurger.svg" alt="mobile-nav">
+            <img id="mobile-cta" class="mobile-nav" src="/hamburgerMenuhamBurger.svg" alt="mobile-nav">
+            <nav>
+                <img id="mobile-exit" src="/closeNavclose.svg" class="mobile-nav-exit" alt="close-nav">
+                <ul class="primary-nav">
+                    <li><a href="#" class="current">Home</a></li>
+                    <li><a href="#"> Our Menu</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="order-now-cta"><a href="#">Order Now</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <img src="/closeNavclose.svg" class="mobile-menu-exit" alt="closeNav">
-            <ul>
-                <li><a href="#">Our Menu</a></li>
-                <li><a href="#"> About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-
-            <ul>
-                <li><a href="#"><button>Order Now</button></a></li>
-            </ul>
-
-        </nav>
     </div>
 
 
 
     <!--  Welcome Header with a background Image -->
     <section>
-        <div class="desktop-header">
-            <img src="/desktop.svg" alt="headerDesktopVersion">
+        <div class="hero">
+            <img src="/welcomePicture.svg" alt="headerImageMobileView">
         </div>
-        <div class="welcome-header">
-            <div class="welcome-header-image-mobile">
-                <img src="/firstSectionDesktop.svg" alt="headerImageMobileView">
-            </div>
+    </section>
 
-            <!-- Second Header with text writings & Order today Button -->
+    <!-- Second Header with text writings & Order today Button -->
+    <section>
+        <div class="container-hero">
             <div class="second-header">
-                <h2>Come experience a warm & welcoming vibe!</h2>
-                <h2>Where life's simplicities are delighted in</h2>
+                <h1>Come experience a warm & welcoming vibe!</h1>
+                <h2>Where life's simplicities are delighted in.</h2>
                 <p>Freddie's Bakehouse & Smoothies creates the right ambience for memories & Tastiness to be created. <span>
                         At our Bakehouse, there's varieties of choices to be made. From an array if freshly brewed coffees, cold beverages & splendid cusines that will more or less set the mood & tone for that discerning Gourment Connoisseur.
-                    </span> </p>
+                    </span>
+                </p>
+                <ul class="order-cta">
+                    <li><a href="#">Order Today</a></li>
+                </ul>
+
             </div>
-            <a href="#"><button>Order Today</button></a>
+
+            <!-- Video Outlay of Freddie's Meals-->
+            <div class="video-section">
+                <iframe width="600" height="450" src="https://www.youtube.com/embed/FzzUVvGBTO8?start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="yes"></iframe>
+            </div>
         </div>
     </section>
-
-
-    <!-- Third Section with the freshly baked writeup for max 768px-->
-    <section>
-        <div class="third-section">
-            <img src="/thirdSection.svg" alt="thirdSection">
-        </div>
-
-    </section>
-
-    <!-- Menu Selection Bar -->
-    <!-- 
-       <section>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/assets/images/dessertsSliderMenu.png" class="d-block w-30" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-   -->
 
     <!-- Map Area (Geo Location) -->
     <section id="map-cta" class="map-section">
@@ -151,10 +109,12 @@
             </p>
         </div>
     </footer>
+    <script src="/app/trigger.js"></script>
     <script src="/scripts/app.js"></script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 </body>
 
