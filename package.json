@@ -1,7 +1,7 @@
 {
     "name": "freddiefinalproject",
     "version": "1.0.0",
-    "description": "Freddie's Website Project",
+    "description": "Website Project for Freddie's Bakehouse & Smoothies",
     "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -16,5 +16,10 @@
     "bugs": {
         "url": "https://github.com/Cudderfelix/freddieFinalProject/issues"
     },
-    "homepage": "https://github.com/Cudderfelix/freddieFinalProject#readme"
+    "homepage": "https://github.com/Cudderfelix/freddieFinalProject#readme",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.2",
+        "lodash": "^4.17.21"
+    }
 }
