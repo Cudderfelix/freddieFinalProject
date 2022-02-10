@@ -1,10 +1,8 @@
-const express = require('express')
-ejs = require('ejs')
-app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const ejs = require('ejs');
+const app = express();
 
-
-// register view engine    
-app.set('view engine', 'ejs');
 
 // listen for requests
 let port = process.env.PORT;
@@ -12,6 +10,10 @@ if (port == null || port == "") {
     port = 8000;
 }
 app.listen(port);
+// register view engine    
+app.set('view engine', 'ejs');
+
+
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
