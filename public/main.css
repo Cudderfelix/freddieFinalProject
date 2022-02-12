@@ -1,12 +1,6 @@
 /*Font style from Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Ubuntu:wght@700&display=swap");
 /*Color codes for my designs */
-:root {
-  --primary-color: #1C2E1A;
-  --secondary-color1: #FFFFFF;
-  --secondary-color2: #a80205b4;
-}
-
 /* Css Styling Section for my Project */
 body {
   background-image: url("/backgroundImage.jpg");
@@ -15,7 +9,7 @@ body {
 }
 
 .navbar {
-  background: var(--primary-color);
+  background: #1C2E1A;
   padding: 0;
 }
 
@@ -39,12 +33,12 @@ body {
 }
 
 .navbar a:hover {
-  color: var(--secondary-color2);
+  color: #a80205b4;
   opacity: 0.5;
 }
 
 .navbar a {
-  color: var(--secondary-color1);
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -53,11 +47,12 @@ body {
 }
 
 .navbar .order-now-cta {
-  margin-left: 6rem;
+  font-size: 0.8rem;
+  margin-left: 2.0rem;
   padding: 0.1rem;
   border-radius: 0.6rem;
   border: solid;
-  color: var(--secondary-color1);
+  color: #FFFFFF;
 }
 
 ul {
@@ -100,14 +95,14 @@ ul {
   margin: 1.5rem;
   padding: 0.5rem;
   text-decoration: none;
-  background: var(--primary-color);
-  color: var(--secondary-color1);
+  background: #1C2E1A;
+  color: #FFFFFF;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   border-radius: 0.6rem;
   border: 0.3rem;
-  border-color: var(--primary-color);
+  border-color: #1C2E1A;
   border-style: solid;
 }
 
@@ -122,7 +117,7 @@ ul {
 /* Css Styling for Map-Section */
 .map-section {
   margin: 1.5em;
-  color: var(--primary-color);
+  color: #1C2E1A;
   font-weight: bold;
   font-family: 'poppins', 'sans-serif';
 }
@@ -133,10 +128,10 @@ ul {
 }
 
 .map-section .map-style {
-  border-color: var(--primary-color);
+  border-color: #1C2E1A;
   border-style: dashed;
   border-radius: 0.5em;
-  border-color: var(--primary-color);
+  border-color: #1C2E1A;
   border-style: dashed;
   border-radius: 0.5em;
 }
@@ -157,11 +152,11 @@ ul {
 
 /* Footer Css Styling  for index.html*/
 footer {
-  background-color: var(--primary-color);
+  background-color: #1C2E1A;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   font-size: 12px;
   font-family: 'poppins', 'sans-serif';
-  color: var(--secondary-color1);
+  color: #FFFFFF;
   font-weight: 400;
 }
 
@@ -172,7 +167,7 @@ footer .notices {
 footer li a {
   list-style: none;
   text-decoration: none;
-  color: var(--secondary-color1);
+  color: #FFFFFF;
   font-family: 'poppins', 'sans-serif';
   font-weight: light;
 }
@@ -186,14 +181,14 @@ footer .ref-class {
 }
 
 footer .footer-inscr {
-  color: var(--secondary-color1);
+  color: #FFFFFF;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   text-align: center;
 }
 
 footer .footer-inscr a {
   text-decoration: none;
-  color: var(--secondary-color1);
+  color: #FFFFFF;
 }
 
 nav {
@@ -202,7 +197,7 @@ nav {
   width: 60%;
   right: 0;
   top: 0;
-  background: var(--primary-color);
+  background: #1C2E1A;
   height: 100vh;
   padding: 1em;
   -webkit-transition: 0.5s;
@@ -214,7 +209,7 @@ nav ul.primary-nav {
 }
 
 nav li a {
-  color: var(--secondary-color1);
+  color: #FFFFFF;
   display: block;
   padding: .5em;
   font-size: 1.1em;

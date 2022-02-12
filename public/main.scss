@@ -3,11 +3,9 @@
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&family=Ubuntu:wght@700&display=swap');
                 /*Color codes for my designs */
                 
-                 :root {
-                    --primary-color: #1C2E1A;
-                    --secondary-color1: #FFFFFF;
-                    --secondary-color2: #a80205b4;
-                }
+                $primary-color: #1C2E1A;
+                $second-color: #FFFFFF;
+                $third-color: #a80205b4;
                 /* Css Styling Section for my Project */
                 
                 body {
@@ -17,7 +15,7 @@
                 }
                 
                 .navbar {
-                    background: var(--primary-color);
+                    background: $primary-color;
                     padding: 0;
                     .freddie-logo {
                         margin-bottom: 0.5em;
@@ -33,22 +31,23 @@
                         list-style-type: none;
                     }
                     a:hover {
-                        color: var(--secondary-color2);
+                        color: $third-color;
                         opacity: 0.5;
                     }
                     a {
-                        color: var(--secondary-color1);
+                        color: $second-color;
                         text-decoration: none;
                     }
                     .mobile-nav {
                         cursor: pointer;
                     }
                     .order-now-cta {
-                        margin-left: 6rem;
+                        font-size: 0.8rem;
+                        margin-left: 2.0rem;
                         padding: 0.1rem;
                         border-radius: 0.6rem;
                         border: solid;
-                        color: var(--secondary-color1);
+                        color: $second-color;
                     }
                 }
                 
@@ -88,12 +87,12 @@
                                 margin: 1.5rem;
                                 padding: 0.5rem;
                                 text-decoration: none;
-                                background: var(--primary-color);
-                                color: var(--secondary-color1);
+                                background: $primary-color;
+                                color: $second-color;
                                 align-self: center;
                                 border-radius: 0.6rem;
                                 border: 0.3rem;
-                                border-color: var(--primary-color);
+                                border-color: $primary-color;
                                 border-style: solid;
                             }
                         }
@@ -109,7 +108,7 @@
                 
                 .map-section {
                     margin: 1.5em;
-                    color: var(--primary-color);
+                    color: $primary-color;
                     font-weight: bold;
                     font-family: 'poppins', 'sans-serif';
                     h3 {
@@ -117,10 +116,10 @@
                         font-weight: bold;
                     }
                     .map-style {
-                        border-color: var(--primary-color);
+                        border-color: $primary-color;
                         border-style: dashed;
                         border-radius: 0.5em;
-                        border-color: var(--primary-color);
+                        border-color: $primary-color;
                         border-style: dashed;
                         border-radius: 0.5em;
                     }
@@ -141,11 +140,11 @@
                 /* Footer Css Styling  for index.html*/
                 
                 footer {
-                    background-color: var(--primary-color);
+                    background-color: $primary-color;
                     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
                     font-size: 12px;
                     font-family: 'poppins', 'sans-serif';
-                    color: var(--secondary-color1);
+                    color: $second-color;
                     font-weight: 400;
                     .notices {
                         padding: 0.5rem 0.5rem 1rem 0.5rem;
@@ -153,7 +152,7 @@
                     li a {
                         list-style: none;
                         text-decoration: none;
-                        color: var(--secondary-color1);
+                        color: $second-color;
                         font-family: 'poppins', 'sans-serif';
                         font-weight: light;
                     }
@@ -163,10 +162,10 @@
                         margin: 0.5rem 1rem 1rem 0.5rem;
                     }
                     .footer-inscr {
-                        color: var(--secondary-color1);
+                        color: $second-color;
                         a {
                             text-decoration: none;
-                            color: var(--secondary-color1);
+                            color: $second-color;
                         }
                         padding: 0.5rem 0.5rem 0.5rem 0.5rem;
                         text-align: center;
@@ -179,7 +178,7 @@
                     width: 60%;
                     right: 0;
                     top: 0;
-                    background: var(--primary-color);
+                    background: $primary-color;
                     height: 100vh;
                     padding: 1em;
                     transition: 0.5s;
@@ -188,7 +187,7 @@
                     }
                     li {
                         a {
-                            color: var(--secondary-color1);
+                            color: $second-color;
                             display: block;
                             padding: .5em;
                             font-size: 1.1em;
