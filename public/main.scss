@@ -6,19 +6,21 @@
                 $primary-color: #1C2E1A;
                 $second-color: #FFFFFF;
                 $third-color: #a80205b4;
+                $font1: 'poppins',
+                'sans-serif';
                 /* Css Styling Section for my Project */
                 
                 body {
                     background-image: url('/backgroundImage.jpg');
                     margin: 0;
-                    font-family: 'poppins', sans-serif;
+                    font-family: $font1;
                 }
                 
                 .navbar {
                     background: $primary-color;
                     padding: 0;
                     .freddie-logo {
-                        margin-bottom: 0.5em;
+                        margin: 1em 0em 0.5em 0em;
                     }
                     .container {
                         display: flex;
@@ -42,9 +44,8 @@
                         cursor: pointer;
                     }
                     .order-now-cta {
-                        font-size: 0.8rem;
-                        margin-left: 2.0rem;
-                        padding: 0.1rem;
+                        margin-left: 3rem;
+                        padding: 0;
                         border-radius: 0.6rem;
                         border: solid;
                         color: $second-color;
@@ -127,16 +128,6 @@
                         width: 100%;
                     }
                 }
-                /* Css styling for bigger screens min-width: 768px */
-                
-                @media screen and (min-width: 768px) {
-                    .mobile-nav {
-                        display: none;
-                    }
-                    .mobile-nav-exit {
-                        display: none;
-                    }
-                }
                 /* Footer Css Styling  for index.html*/
                 
                 footer {
@@ -208,4 +199,42 @@
                 
                 nav.menu-btn {
                     display: block;
+                }
+                /* Css styling for bigger screens min-width: 768px */
+                
+                @media screen and (min-width: 768px) {
+                    .mobile-nav,
+                    .mobile-nav-exit {
+                        display: none;
+                    }
+                    .navbar .container {
+                        display: grid;
+                        grid-template-columns: 180px auto;
+                    }
+                    .navbar nav {
+                        font-size: 1em;
+                        display: flex;
+                        justify-content: space-between;
+                        background: none;
+                        position: unset;
+                        height: auto;
+                        width: 80%;
+                        padding: 0;
+                        ul {
+                            display: flex;
+                        }
+                        a {
+                            color: $second-color;
+                            font-size: 1em;
+                            padding: .1em 1em;
+                        }
+                        ul.primary-nav {
+                            margin: 0;
+                        }
+                    }
+                    .container-hero {
+                        .second-header {
+                            font-size: 3rem;
+                        }
+                    }
                 }
