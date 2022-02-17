@@ -4,19 +4,18 @@
 
 /*Color codes for my designs */
 
- :root {
-    --primary-color: #1C2E1A;
-    --secondary-color1: #FFFFFF;
-    --secondary-color2: #d42d30b4;
-}
-
+$primary-color: #1C2E1A;
+$secondary-color1: #FFFFFF;
+$secondary-color2: #d42d30b4;
+$font1: 'poppins',
+'sans-serif';
 
 /* Css Styling Section for my Project */
 
 body {
     background-image: url('/backgroundImage.jpg');
     margin: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: $font1;
 }
 
 .first-header .img-nav {
@@ -32,15 +31,14 @@ body {
 }
 
 .first-header h1 {
-    font-size: 30px;
+    font-size: 1.65em;
     text-align: center;
-    color: var(--primary-color);
+    color: $primary-color;
     font-weight: bolder;
-    font-family: 'Poppins', 'sans-serif';
 }
 
 .nav-Buttons button:hover {
-    color: var(--secondary-color2);
+    color: $secondary-color2;
 }
 
 .nav-Buttons {
@@ -48,11 +46,11 @@ body {
 }
 
 .nav-Buttons .nav-button {
-    font-size: 28px;
+    font-size: 1.75em;
     font-weight: bold;
-    font-family: 'poppins', 'sans-serif';
+    font-family: $font1;
     margin: 1em;
-    color: var(--primary-color);
+    color: $primary-color;
     background-color: transparent;
     padding: 0.2em;
 }
@@ -61,7 +59,7 @@ body {
     padding: 1rem;
     border-radius: 1.1rem;
     border: 0.3rem;
-    border-color: var(--primary-color);
+    border-color: $primary-color;
     border-style: solid;
 }
 
@@ -70,13 +68,11 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-    .first-header {
-        .img-nav {
-            margin: 0.1em auto 0.1em auto;
-            width: 20%;
-        }
+    .first-header .img-nav {
+        margin: 0.1em auto 0.1em auto;
+        width: 30%;
         h1 {
-            font-size: 60px;
+            font-size: 8.5em;
             font-weight: bolder;
         }
     }

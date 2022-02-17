@@ -32,14 +32,14 @@ body {
   list-style-type: none;
 }
 
-.navbar a:hover {
-  color: #a80205b4;
-  opacity: 0.5;
-}
-
 .navbar a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #a80205b4;
+  opacity: 0.5;
 }
 
 .navbar .mobile-nav {
@@ -201,12 +201,13 @@ nav li a {
   color: #FFFFFF;
   display: block;
   padding: .5em;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 500;
   text-align: right;
 }
 
 nav li a:hover {
+  color: #a80205b4;
   font-weight: 700;
   opacity: 0.5;
 }
@@ -230,11 +231,11 @@ nav.menu-btn {
   .navbar .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 180px auto;
-        grid-template-columns: 180px auto;
+    -ms-grid-columns: 250px auto;
+        grid-template-columns: 250px auto;
   }
   .navbar nav {
-    font-size: 1em;
+    font-size: 0.83em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -254,11 +255,14 @@ nav.menu-btn {
   }
   .navbar nav a {
     color: #FFFFFF;
-    font-size: 1em;
+    font-size: 1.3em;
     padding: .1em 1em;
   }
   .navbar nav ul.primary-nav {
     margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bolder;
   }
   .container-hero .second-header {
     font-size: 3rem;

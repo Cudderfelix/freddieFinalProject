@@ -32,13 +32,13 @@
                     li {
                         list-style-type: none;
                     }
-                    a:hover {
-                        color: $third-color;
-                        opacity: 0.5;
-                    }
                     a {
                         color: $second-color;
                         text-decoration: none;
+                    }
+                    a:hover {
+                        color: $third-color;
+                        opacity: 0.5;
                     }
                     .mobile-nav {
                         cursor: pointer;
@@ -181,13 +181,14 @@
                             color: $second-color;
                             display: block;
                             padding: .5em;
-                            font-size: 1.1em;
+                            font-size: 1em;
                             font-weight: 500;
                             text-align: right;
-                            &:hover {
-                                font-weight: 700;
-                                opacity: 0.5;
-                            }
+                        }
+                        a:hover {
+                            color: $third-color;
+                            font-weight: 700;
+                            opacity: 0.5;
                         }
                     }
                     .mobile-nav-exit {
@@ -209,10 +210,10 @@
                     }
                     .navbar .container {
                         display: grid;
-                        grid-template-columns: 180px auto;
+                        grid-template-columns: 250px auto;
                     }
                     .navbar nav {
-                        font-size: 1em;
+                        font-size: 0.83em;
                         display: flex;
                         justify-content: space-between;
                         background: none;
@@ -225,11 +226,14 @@
                         }
                         a {
                             color: $second-color;
-                            font-size: 1em;
+                            font-size: 1.3em;
                             padding: .1em 1em;
                         }
                         ul.primary-nav {
                             margin: 0;
+                        }
+                        li.current a {
+                            font-weight: bolder;
                         }
                     }
                     .container-hero {
