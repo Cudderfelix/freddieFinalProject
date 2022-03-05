@@ -63,11 +63,16 @@
                     }
                 }
                 
-                .container-hero {
+                .wrapper {
                     margin: 1em 0.5em 1em 0.5em;
-                    .second-header {
+                    display: flex;
+                    height: 350px;
+                    width: 90%;
+                    .container-2 {
                         background-color: $fourth-color;
                         border-radius: 0.4em;
+                        flex-grow: 2;
+                        width: 40%;
                         h2 {
                             text-align: center;
                             font-size: 1em;
@@ -97,9 +102,13 @@
                         }
                     }
                     .video-section {
+                        background-color: $fourth-color;
+                        border-radius: 0.4em;
+                        flex-grow: 2;
+                        width: 45%;
                         margin: 1.5em;
                         iframe {
-                            width: 98%;
+                            width: 40%;
                         }
                     }
                 }

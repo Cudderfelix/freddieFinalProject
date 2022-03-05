@@ -62,32 +62,41 @@ ul {
   width: 100%;
 }
 
-.container-hero {
+.wrapper {
   margin: 1em 0.5em 1em 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 350px;
+  width: 90%;
 }
 
-.container-hero .second-header {
+.wrapper .container-2 {
   background-color: #FFECEC;
   border-radius: 0.4em;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  width: 40%;
 }
 
-.container-hero .second-header h2 {
+.wrapper .container-2 h2 {
   text-align: center;
   font-size: 1em;
   font-weight: 700;
 }
 
-.container-hero .second-header p {
+.wrapper .container-2 p {
   text-align: center;
   font-size: 0.6em;
   font-weight: 300;
 }
 
-.container-hero .second-header .order-cta {
+.wrapper .container-2 .order-cta {
   text-align: center;
 }
 
-.container-hero .second-header .order-cta a {
+.wrapper .container-2 .order-cta a {
   font-size: 20px;
   font-weight: 500;
   margin: 1.5rem;
@@ -104,12 +113,18 @@ ul {
   border-style: solid;
 }
 
-.container-hero .video-section {
+.wrapper .video-section {
+  background-color: #FFECEC;
+  border-radius: 0.4em;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  width: 45%;
   margin: 1.5em;
 }
 
-.container-hero .video-section iframe {
-  width: 98%;
+.wrapper .video-section iframe {
+  width: 40%;
 }
 
 /* Css Styling for Map-Section */
