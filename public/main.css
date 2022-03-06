@@ -63,47 +63,50 @@ ul {
 }
 
 .wrapper {
-  margin: 1em 0.5em 1em 0.5em;
+  margin: 1em 1em 1em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 350px;
+  height: 300px;
   width: 90%;
 }
 
 .wrapper .container-2 {
-  background-color: #FFECEC;
+  background-color: transparent;
+  margin: 1em 1em 1em 1em;
+  padding: 1.3em 1em 1.3em 1em;
   border-radius: 0.4em;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  width: 40%;
+  width: 45%;
 }
 
 .wrapper .container-2 h2 {
   text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
 .wrapper .container-2 p {
   text-align: center;
-  font-size: 0.6em;
-  font-weight: 300;
+  font-size: 1em;
+  font-weight: 400;
 }
 
-.wrapper .container-2 .order-cta {
+.wrapper .order-cta {
   text-align: center;
 }
 
-.wrapper .container-2 .order-cta a {
+.wrapper .order-cta a {
+  position: absolute;
   font-size: 20px;
   font-weight: 500;
-  margin: 1.5rem;
+  margin-left: 1.7rem;
   padding: 0.5rem;
   text-decoration: none;
-  background: #1C2E1A;
-  color: #FFFFFF;
+  background: transparent;
+  color: #1C2E1A;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -114,17 +117,10 @@ ul {
 }
 
 .wrapper .video-section {
-  background-color: #FFECEC;
-  border-radius: 0.4em;
+  margin: 1em 1em 1em 1em;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  width: 45%;
-  margin: 1.5em;
-}
-
-.wrapper .video-section iframe {
-  width: 40%;
 }
 
 /* Css Styling for Map-Section */

@@ -64,52 +64,49 @@
                 }
                 
                 .wrapper {
-                    margin: 1em 0.5em 1em 0.5em;
+                    margin: 1em 1em 1em 1em;
                     display: flex;
-                    height: 350px;
+                    height: 300px;
                     width: 90%;
                     .container-2 {
-                        background-color: $fourth-color;
+                        background-color: transparent;
+                        margin: 1em 1em 1em 1em;
+                        padding: 1.3em 1em 1.3em 1em;
                         border-radius: 0.4em;
                         flex-grow: 2;
-                        width: 40%;
+                        width: 45%;
                         h2 {
                             text-align: center;
-                            font-size: 1em;
+                            font-size: 1.5em;
                             font-weight: 700;
                         }
                         p {
                             text-align: center;
-                            font-size: 0.6em;
-                            font-weight: 300;
+                            font-size: 1em;
+                            font-weight: 400;
                         }
-                        .order-cta {
-                            text-align: center;
-                            a {
-                                font-size: 20px;
-                                font-weight: 500;
-                                margin: 1.5rem;
-                                padding: 0.5rem;
-                                text-decoration: none;
-                                background: $primary-color;
-                                color: $second-color;
-                                align-self: center;
-                                border-radius: 0.6rem;
-                                border: 0.3rem;
-                                border-color: $primary-color;
-                                border-style: solid;
-                            }
+                    }
+                    .order-cta {
+                        text-align: center;
+                        a {
+                            position: absolute;
+                            font-size: 20px;
+                            font-weight: 500;
+                            margin-left: 1.7rem;
+                            padding: 0.5rem;
+                            text-decoration: none;
+                            background: transparent;
+                            color: $primary-color;
+                            align-self: center;
+                            border-radius: 0.6rem;
+                            border: 0.3rem;
+                            border-color: $primary-color;
+                            border-style: solid;
                         }
                     }
                     .video-section {
-                        background-color: $fourth-color;
-                        border-radius: 0.4em;
+                        margin: 1em 1em 1em 1em;
                         flex-grow: 2;
-                        width: 45%;
-                        margin: 1.5em;
-                        iframe {
-                            width: 40%;
-                        }
                     }
                 }
                 /* Css Styling for Map-Section */
