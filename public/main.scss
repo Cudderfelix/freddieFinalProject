@@ -66,76 +66,77 @@
                 .wrapper {
                     display: flex;
                     margin: 1em 1em 1em 1em;
-                    height: 300px;
-                    width: 90%;
-                    .flex-container {
-                        flex-wrap: wrap;
-                        min-width: 300px;
-                        .container-2 {
-                            background-color: transparent;
-                            margin: 1em 1em 1em 1em;
-                            padding: 1.3em 1em 1.3em 1em;
-                            border-radius: 0.4em;
-                            min-width: 100px;
-                            h2 {
-                                text-align: center;
-                                font-size: 1.3em;
-                                font-weight: 700;
-                            }
-                            p {
-                                text-align: center;
-                                font-size: 1.1em;
-                                font-weight: 500;
-                            }
-                        }
-                        .order-cta {
+                    padding: 1em 1em 1em 1em;
+                    width: auto;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .container-2 {
+                        background-color: transparent;
+                        margin: 1em 1em 1em 1em;
+                        padding: 1.3em 1em 1.3em 1em;
+                        border-radius: 0.4em;
+                        flex-grow: 1;
+                        flex-basis: 300px;
+                        h2 {
                             text-align: center;
-                            a {
-                                position: absolute;
-                                font-size: 20px;
-                                font-weight: 500;
-                                margin-left: 1.5rem;
-                                padding-left: 35px;
-                                padding: 0.5rem;
-                                text-decoration: none;
-                                background: transparent;
-                                color: $primary-color;
-                                align-self: center;
-                                border-radius: 0.6rem;
-                                border: 0.3rem;
-                                border-color: $primary-color;
-                                border-style: solid;
-                            }
+                            font-size: 1.3em;
+                            font-weight: 700;
                         }
-                        .video-section {
-                            margin: 1em 1em 1em 1em;
+                        p {
+                            text-align: center;
+                            font-size: 1.1em;
+                            font-weight: 500;
+                        }
+                    }
+                    .order-cta {
+                        text-align: center;
+                        a {
+                            position: absolute;
+                            font-size: 0.6em;
+                            font-weight: 500;
+                            padding: 0.5rem;
+                            text-decoration: none;
+                            background: transparent;
+                            color: $primary-color;
+                            align-self: center;
+                            border-radius: 0.6rem;
+                            border: 0.3rem;
+                            border-color: $primary-color;
+                            border-style: solid;
+                        }
+                    }
+                    .video-section {
+                        flex-grow: 1;
+                        flex-basis: 300px;
+                        margin: 1em 1em 1em 1em;
+                        width: auto;
+                        align-self: center;
+                    }
+                    .map-section {
+                        margin: 5em;
+                        color: $primary-color;
+                        font-weight: bold;
+                        font-family: $font1;
+                        h3 {
+                            text-align: center;
+                            font-weight: bold;
+                        }
+                        .map-style {
+                            margin: 2em;
+                            border-color: $primary-color;
+                            border-style: dashed;
+                            border-radius: 0.5em;
+                            border-color: $primary-color;
+                            border-style: dashed;
+                            border-radius: 0.5em;
+                        }
+                        iframe {
+                            width: auto;
+                            align-self: center;
                         }
                     }
                 }
                 /* Css Styling for Map-Section */
-                
-                .map-section {
-                    margin: 5em;
-                    color: $primary-color;
-                    font-weight: bold;
-                    font-family: $font1;
-                    h3 {
-                        text-align: center;
-                        font-weight: bold;
-                    }
-                    .map-style {
-                        margin: 2em;
-                        border-color: $primary-color;
-                        border-style: dashed;
-                        border-radius: 0.5em;
-                        border-color: $primary-color;
-                        border-style: dashed;
-                        border-radius: 0.5em;
-                    }
-                    iframe {
-                        width: 100%;
-                    }
-                }
                 /* Footer Css Styling  for index.html*/
                 
                 footer {
@@ -244,38 +245,44 @@
                             font-weight: bolder;
                         }
                     }
-                    .container-2 {
-                        h2 {
+                    .wrapper {
+                        .container-2 {
+                            flex-grow: 1;
+                            h2 {
+                                text-align: center;
+                                font-size: 1.8em;
+                                font-weight: 700;
+                                margin-bottom: 1em;
+                            }
+                            p {
+                                text-align: center;
+                                font-size: 1.5em;
+                                font-weight: 500;
+                                margin-bottom: 1em;
+                            }
+                        }
+                        .order-cta {
                             text-align: center;
-                            font-size: 1.8em;
-                            font-weight: 700;
+                            a {
+                                position: absolute;
+                                font-size: 2em;
+                                font-weight: 500;
+                                margin: 0.5em 1em 3em 1em;
+                                padding-left: 50px;
+                                padding: 0.5rem;
+                                text-decoration: none;
+                                background: transparent;
+                                color: $primary-color;
+                                align-self: center;
+                                border-radius: 0.6rem;
+                                border: 0.3rem;
+                                border-color: $primary-color;
+                                border-style: solid;
+                            }
                         }
-                        p {
-                            text-align: center;
-                            font-size: 1.5em;
-                            font-weight: 500;
+                        .video-section {
+                            flex-grow: 2;
+                            margin: 1em 1em 1em 1em;
                         }
-                    }
-                    .order-cta {
-                        text-align: center;
-                        a {
-                            position: absolute;
-                            font-size: 20px;
-                            font-weight: 500;
-                            margin-left: 1.7rem;
-                            padding-left: 35px;
-                            padding: 0.5rem;
-                            text-decoration: none;
-                            background: transparent;
-                            color: $primary-color;
-                            align-self: center;
-                            border-radius: 0.6rem;
-                            border: 0.3rem;
-                            border-color: $primary-color;
-                            border-style: solid;
-                        }
-                    }
-                    .video-section {
-                        margin: 1em 1em 1em 1em;
                     }
                 }
