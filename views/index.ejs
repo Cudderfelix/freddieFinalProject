@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS BootStrap only -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="/main.css">
+    <!-- CSS BootStrap only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--  Swiper CDN -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
@@ -51,34 +52,44 @@
     </section>
 
     <!-- Second Header with text writings & Order today Button -->
-    <section>
-        <div class="wrapper">
-            <div class="container-2">
-                <h2>Come experience a warm & welcoming vibe!<br> Where life's simplicities are delighted in.</h2>
+    <section id="first-writeup">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        Our Journey so Far as a family! Even with the steady growth of our business from the humble pots of our home kitchen, We strive to maintain our top notch standard and change the taste of conventional fast food meals in a cool and classy ambiance with
+                        good customer service. We aim to provide our customers with delectable meals, delicious unique tasting smoothies in our uniquely furnished location that live up to our reputation as the original enjoyment ministers. As a family
+                        oriented establishment, we strongly believe in the ties of family, So we aspire to allow our customers to experience meals cooked from a loving mother’s desire to see her customers enjoy the very best tasting meals that tickle
+                        their taste buds as well as warm their hearts. Freddie’s Bakehouse and Smoothies will continue to cater to the satisfaction of our clients and ensure they enjoy ‘Good food, and spread positive Vibes! Like to Download our Menu for
+                        Reference?
+                    </p>
+                    <div class="d-grid gap-2 d-md-block">
+                        <button type="button" class="btn btn-outline-success mx-auto"> ORDER TODAY</button>
+                    </div>
 
-                <p>Freddie's Bakehouse & Smoothies creates the right ambience for memories & Tastiness to be created. <span>
-                        At our Bakehouse, there's varieties of choices to be made. From an array if freshly brewed coffees, cold beverages & splendid cusines that will more or less set the mood & tone for that discerning Gourment Connoisseur.
-                    </span>
-                </p>
-                <ul class="order-cta">
-                    <li><a href="#">Order Today</a></li>
-                </ul>
-
-            </div>
-
-            <!-- Video Outlay of Freddie's Meals-->
-            <div class="video-section">
-                <video width="500" height="280" style="border-radius: 0.6rem;" controls>
+                </div>
+                <!-- Video Outlay of Freddie's Meals-->
+                <div class="col">
+                    <video width="400" height="280" style="border-radius: 0.6rem;" controls>
                     <source src="videos/Illustration.mp4" type="video/mp4">
-                </video>
+                    </video>
+                </div>
             </div>
 
-            <div class="map-style">
-                <h3>Try us Today!<br><span>(1 Segun Akinbuli Street, Isheri-Oshun Lagos) </span></h3>
+        </div>
+
+
+        <!-- Map Style -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h4>Try us Today!</h4>
+                    <span><p>(1 Segun Akinbuli Street, Isheri-Oshun Lagos) </p></span>
+                </div>
+
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.9439165571134!2d3.293445815382258!3d6.528767895277659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8fcffe2e44d9%3A0x983270fec281008d!2sFreddie&#39;s%20Bakehouse%20and%20Smoothies!5e0!3m2!1sen!2suk!4v1640935502879!5m2!1sen!2suk"
                     width="600" height="450" style="border:0;" allowfullscreen="yes" loading="lazy"></iframe>
             </div>
-
 
         </div>
     </section>
@@ -110,6 +121,7 @@
             </p>
         </div>
     </footer>
+
     <script>
         const mobileBtn = document.getElementById('mobile-cta')
         nav = document.querySelector('nav')
