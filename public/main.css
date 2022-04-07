@@ -62,45 +62,35 @@ ul {
   width: 100%;
 }
 
-#first-writeup {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.write-up {
+  margin-top: 2.5em;
+  color: #1C2E1A;
 }
 
-#first-writeup article {
-  background-color: transparent;
-  margin: 1em 1em 1em 1em;
-  padding: 1.3em 1em 1.3em 1em;
-  border-radius: 0.4em;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 500px;
-          flex: 1 500px;
-  width: 90%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.write-up p {
+  font-size: 1em;
+  font-family: "poppins", "sans-serif";
+  font-weight: 600;
 }
 
-#first-writeup article h2 {
-  text-align: center;
-  font-size: 1.3em;
-  font-weight: 700;
+.write-up p span {
+  font-size: 1.5em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-#first-writeup article p {
-  text-align: center;
-  font-size: 1.1em;
-  font-weight: 500;
+.write-up .write-up {
+  font-weight: 800;
 }
 
-.video-section {
+.write-up .button-style {
+  border-radius: 0.8em;
+  border: solid;
+  color: #1C2E1A;
+}
+
+.write-up .video-section {
   margin: 1em 1em 1em 1em;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -114,7 +104,8 @@ ul {
   font-family: "poppins", "sans-serif";
 }
 
-.map-section h3 {
+.map-section p {
+  font-size: 20px;
   text-align: center;
   font-weight: bold;
 }
@@ -261,6 +252,31 @@ nav.menu-btn {
   }
   .navbar nav li.current a {
     font-weight: bolder;
+  }
+  .write-up {
+    color: #1C2E1A;
+  }
+  .write-up p {
+    font-size: 1.5em;
+    font-family: "poppins", "sans-serif";
+    font-weight: 600;
+  }
+  .write-up p span {
+    font-size: 1.5em;
+  }
+  .write-up .write-up {
+    font-weight: 800;
+  }
+  .write-up .button-style {
+    border-radius: 0.8em;
+    border: solid;
+    color: #1C2E1A;
+  }
+  .write-up .video-section {
+    margin: 1em 1em 1em 1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
