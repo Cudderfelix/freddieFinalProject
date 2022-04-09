@@ -63,25 +63,22 @@ ul {
 }
 
 .write-up {
+  font-weight: 800;
   margin-top: 2.5em;
   color: #1C2E1A;
 }
 
-.write-up p {
+.write-up article {
+  text-align: center;
   font-size: 1em;
   font-family: "poppins", "sans-serif";
   font-weight: 600;
 }
 
-.write-up p span {
-  font-size: 1.5em;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.write-up .write-up {
-  font-weight: 800;
+.write-up article .header {
+  font-size: 2em;
+  margin-bottom: 2em;
+  font-weight: bold;
 }
 
 .write-up .button-style {
@@ -90,13 +87,7 @@ ul {
   color: #1C2E1A;
 }
 
-.write-up .video-section {
-  margin: 1em 1em 1em 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
+/* Css Styling for Map-Section */
 .map-section {
   margin: 5em;
   color: #1C2E1A;
@@ -120,14 +111,6 @@ ul {
   border-radius: 0.5em;
 }
 
-.map-section iframe {
-  width: 100%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-/* Css Styling for Map-Section */
 /* Footer Css Styling  for index.html*/
 footer {
   background-color: #1C2E1A;
@@ -211,6 +194,134 @@ nav.menu-btn {
   display: block;
 }
 
+/* Css styling for bigger screens max-width: 300px */
+@media screen and (min-width: 260px) and (max-width: 300px) {
+  .write-up iframe {
+    margin: 1.5em 0.7em 0.7em 0.7em;
+    width: 230px;
+    height: 140px;
+  }
+  .button-margin {
+    margin-top: 2em;
+  }
+  .map-section {
+    margin: 2em;
+    color: #1C2E1A;
+    font-weight: bold;
+    font-family: "poppins", "sans-serif";
+  }
+  .map-section p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+/* Css styling for screen max-width: 350px */
+@media screen and (min-width: 300px) and (max-width: 350px) {
+  .write-up iframe {
+    margin: 1.5em 0.7em 0.7em 0.7em;
+    width: 280px;
+    height: 170px;
+  }
+  .button-margin {
+    margin-top: 2em;
+  }
+  .map-section {
+    margin: 2em;
+    color: #1C2E1A;
+    font-weight: bold;
+    font-family: "poppins", "sans-serif";
+  }
+  .map-section p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 399px) {
+  .write-up article .header {
+    font-size: 1.3em;
+  }
+  .write-up article p {
+    font-size: 0.8em;
+  }
+  .write-up iframe {
+    margin: 1.5em 0.7em 0.7em 0.7em;
+    width: 320px;
+    height: 190px;
+  }
+  .button-margin {
+    margin-top: 2em;
+  }
+  .map-section {
+    margin: 2em;
+    color: #1C2E1A;
+    font-weight: bold;
+    font-family: "poppins", "sans-serif";
+  }
+  .map-section p {
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+  }
+  .map-section span {
+    text-align: center;
+    font-size: 0.48em;
+    font-weight: 400;
+  }
+}
+
+/* Css styling for screen max-width: 400px */
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  .write-up article .header {
+    font-size: 1.5em;
+  }
+  .write-up article p {
+    margin-top: 2em;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+  }
+  .write-up iframe {
+    margin: 1.5em 1.5em 1.5em 1.3em;
+    width: 350px;
+    height: 200px;
+  }
+  .button-margin {
+    margin-top: 2em;
+  }
+  .map-section p {
+    font-size: 1.5em;
+  }
+  .map-section span {
+    font-size: 0.5em;
+    font-weight: bold;
+  }
+}
+
+/* Css styling for screen max-width: 500px */
+@media screen and (min-width: 460px) and (max-width: 500px) {
+  .write-up .header {
+    font-size: 1em;
+  }
+  .write-up iframe {
+    margin: 1.5em 2em 1.5em 1.5em;
+    width: 350px;
+    height: 220px;
+  }
+  .button-margin {
+    margin-top: 2em;
+  }
+  .map-section p {
+    font-size: 0.5em;
+  }
+  .map-section span {
+    font-size: 7em;
+  }
+}
+
 /* Css styling for bigger screens min-width: 768px */
 @media screen and (min-width: 768px) {
   .mobile-nav,
@@ -256,27 +367,22 @@ nav.menu-btn {
   .write-up {
     color: #1C2E1A;
   }
-  .write-up p {
-    font-size: 1.5em;
+  .write-up article {
+    font-size: 1.3em;
     font-family: "poppins", "sans-serif";
-    font-weight: 600;
   }
-  .write-up p span {
-    font-size: 1.5em;
-  }
-  .write-up .write-up {
-    font-weight: 800;
+  .write-up article .header {
+    font-size: 2em;
   }
   .write-up .button-style {
     border-radius: 0.8em;
     border: solid;
     color: #1C2E1A;
   }
-  .write-up .video-section {
-    margin: 1em 1em 1em 1em;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .write-up iframe {
+    margin: 1.5em 2em 1.5em 1.5em;
+    width: 550px;
+    height: 310px;
   }
 }
 /*# sourceMappingURL=main.css.map */

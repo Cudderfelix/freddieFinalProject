@@ -64,30 +64,27 @@
             }
             
             .write-up {
+                font-weight: 800;
                 margin-top: 2.5em;
                 color: $primary-color;
-                p {
-                    span {
-                        font-size: 1.5em;
-                        align-self: center;
+                article {
+                    text-align: center;
+                    .header {
+                        font-size: 2em;
+                        margin-bottom: 2em;
+                        font-weight: bold;
                     }
                     font-size: 1em;
                     font-family: $font1;
                     font-weight: 600;
-                }
-                .write-up {
-                    font-weight: 800;
                 }
                 .button-style {
                     border-radius: 0.8em;
                     border: solid;
                     color: $primary-color;
                 }
-                .video-section {
-                    margin: 1em 1em 1em 1em;
-                    align-items: center;
-                }
             }
+            /* Css Styling for Map-Section */
             
             .map-section {
                 margin: 5em;
@@ -108,12 +105,7 @@
                     border-style: dashed;
                     border-radius: 0.5em;
                 }
-                iframe {
-                    width: 100%;
-                    align-self: center;
-                }
             }
-            /* Css Styling for Map-Section */
             /* Footer Css Styling  for index.html*/
             
             footer {
@@ -187,6 +179,152 @@
             nav.menu-btn {
                 display: block;
             }
+            /* Css styling for bigger screens max-width: 300px */
+            
+            @media screen and (min-width: 260px) and (max-width: 300px) {
+                .write-up {
+                    iframe {
+                        margin: 1.5em 0.7em 0.7em 0.7em;
+                        width: 230px;
+                        height: 140px;
+                    }
+                }
+                .button-margin {
+                    margin-top: 2em;
+                }
+                .map-section {
+                    margin: 2em;
+                    color: $primary-color;
+                    font-weight: bold;
+                    font-family: $font1;
+                    p {
+                        font-size: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+            /* Css styling for screen max-width: 350px */
+            
+            @media screen and (min-width: 300px) and (max-width: 350px) {
+                .write-up {
+                    iframe {
+                        margin: 1.5em 0.7em 0.7em 0.7em;
+                        width: 280px;
+                        height: 170px;
+                    }
+                }
+                .button-margin {
+                    margin-top: 2em;
+                }
+                .map-section {
+                    margin: 2em;
+                    color: $primary-color;
+                    font-weight: bold;
+                    font-family: $font1;
+                    p {
+                        font-size: 20px;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+            
+            @media screen and (min-width: 360px) and (max-width: 399px) {
+                .write-up {
+                    article {
+                        .header {
+                            font-size: 1.3em;
+                        }
+                        p {
+                            font-size: 0.8em;
+                        }
+                    }
+                    iframe {
+                        margin: 1.5em 0.7em 0.7em 0.7em;
+                        width: 320px;
+                        height: 190px;
+                    }
+                }
+                .button-margin {
+                    margin-top: 2em;
+                }
+                .map-section {
+                    margin: 2em;
+                    color: $primary-color;
+                    font-weight: bold;
+                    font-family: $font1;
+                    p {
+                        font-size: 1em;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                    span {
+                        text-align: center;
+                        font-size: 0.48em;
+                        font-weight: 400;
+                    }
+                }
+            }
+            /* Css styling for screen max-width: 400px */
+            
+            @media screen and (min-width: 400px) and (max-width: 450px) {
+                .write-up {
+                    article {
+                        .header {
+                            font-size: 1.5em;
+                        }
+                        p {
+                            margin-top: 2em;
+                            font-size: 1.2em;
+                            font-weight: 500;
+                            text-align: center;
+                        }
+                    }
+                    iframe {
+                        margin: 1.5em 1.5em 1.5em 1.3em;
+                        width: 350px;
+                        height: 200px;
+                    }
+                }
+                .button-margin {
+                    margin-top: 2em;
+                }
+                .map-section {
+                    p {
+                        font-size: 1.5em;
+                    }
+                    span {
+                        font-size: 0.5em;
+                        font-weight: bold;
+                    }
+                }
+            }
+            /* Css styling for screen max-width: 500px */
+            
+            @media screen and (min-width: 460px) and (max-width: 500px) {
+                .write-up {
+                    .header {
+                        font-size: 1em;
+                    }
+                    iframe {
+                        margin: 1.5em 2em 1.5em 1.5em;
+                        width: 350px;
+                        height: 220px;
+                    }
+                }
+                .button-margin {
+                    margin-top: 2em;
+                }
+                .map-section {
+                    p {
+                        font-size: 0.5em;
+                    }
+                    span {
+                        font-size: 7em;
+                    }
+                }
+            }
             /* Css styling for bigger screens min-width: 768px */
             
             @media screen and (min-width: 768px) {
@@ -224,25 +362,22 @@
                 }
                 .write-up {
                     color: $primary-color;
-                    p {
-                        span {
-                            font-size: 1.5em;
+                    article {
+                        .header {
+                            font-size: 2em;
                         }
-                        font-size: 1.5em;
+                        font-size: 1.3em;
                         font-family: $font1;
-                        font-weight: 600;
-                    }
-                    .write-up {
-                        font-weight: 800;
                     }
                     .button-style {
                         border-radius: 0.8em;
                         border: solid;
                         color: $primary-color;
                     }
-                    .video-section {
-                        margin: 1em 1em 1em 1em;
-                        align-items: center;
+                    iframe {
+                        margin: 1.5em 2em 1.5em 1.5em;
+                        width: 550px;
+                        height: 310px;
                     }
                 }
             }
